@@ -78,10 +78,19 @@
     justify-content: flex-end;
     align-items: center;
 }
-.header-main-right-icon-placeholder {
+.header-main-right-icon-placeholder-normal {
     display: flex;
     align-items: center;
+    transform: translate(200px, 0px);
+    transition: linear 0.4s;
 }
+.header-main-right-icon-placeholder-none {
+    display: flex;
+    align-items: center;
+    transform: translate(0px, 0px);
+    transition: linear 0.4s;
+}
+
 .fav-icon {
     width: 20px;
     margin-left: 4vw;
