@@ -8,6 +8,12 @@ function Navbar(props) {
 
     const [lastItem, setLastItem] = useState(0);
 
+    useEffect(() => {
+        if(props.theNavBarOpen == false) {
+            setLastItem(0);
+        }
+    },[props.theNavBarOpen]);
+
     return(
         <div className={props.theNavBarOpen ? "navbar-open" : "navbar-closed"}>
             <ul className='nav-menu-holder'>

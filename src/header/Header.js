@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
+
 import './header.css'
+
 import Navbar from './navbar/Navbar'
+import Favourite from './favourite/Favourite'
+
 import logo from './header-assets/logo.svg'
 import hamMenu from './header-assets/hammenu.svg'
 import searchBtn from './header-assets/search.svg'
@@ -13,8 +17,10 @@ function Header() {
 
     const [searchOpen, setSearchOpen] = useState(false);
     const [navBarOpen, setNavBarOpen] = useState(false);
+    const [favOpen, setFavOpen] = useState(false);
 
     const [overlayOpen, setOverlayOpen] = useState(false);
+    const [fullOverlay, setFullOverlay] = useState(false);
 
     const openSearchMenu = () => {
         if (!searchOpen) {
@@ -36,9 +42,23 @@ function Header() {
         }
     }
 
+    const openFav = () => {
+        if (!favOpen) {
+            setFavOpen(true);
+            setFullOverlay(true);
+
+            setSearchOpen(false);
+            setOverlayOpen(false)
+        } else {
+            setFavOpen(false);
+            setFullOverlay(false);
+        }
+    }
+
     return (
         <div className='header'>
             <div className={overlayOpen ? 'page-overlay-visible' : 'page-overlay'} />
+            <div className={fullOverlay ? "full-overlay-visible" : "full-overlay"} />
 
             <div className='top-header'>
                 <div className='header-main'>
@@ -51,7 +71,7 @@ function Header() {
                     <div className='header-main-right'>
                         <div className={navBarOpen ? 'header-main-right-icon-placeholder-normal' : 'header-main-right-icon-placeholder-none'}>
                             <img className='search-icon' src={searchBtn} onClick={openSearchMenu}/>
-                            <img className='fav-icon' src={fav} />
+                            <img className='fav-icon' src={fav} onClick={openFav} />
                         </div>
                     </div>
                 </div>
@@ -66,6 +86,9 @@ function Header() {
                 </div>
                 <img className='search-close' src={closeBtn} onClick={openSearchMenu}/>
             </div>
+
+            <Favourite theFavOpen = {favOpen} openFav={openFav} />
+
         </div>
     );
 }

@@ -1,0 +1,132 @@
+
+/* Favourite */
+
+.favourite-open {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 102;
+
+    display: flex;
+
+    transform: translate(0px, 0px);
+    transition: height 0.001s, transform 0.5s 0.001s;
+}
+.favourite-closed {
+    width: 100vw;
+    height: 0vh;
+
+    position: absolute;
+    z-index: 102;
+
+    display: flex;
+    overflow: hidden;
+
+    transform: translate(1000px, 0px);
+    transition: height 0.001s 0.5s, transform 0.5s;
+}
+
+.fav-overlay {
+    width: 15%;
+    height: 100vh;
+}
+
+.fav-main {
+    width: 85%;
+    height: 100vh;
+
+    padding: 0px 25px 25px;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+
+    background-color: white;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+
+
+.fav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0px 20px;
+    border-bottom: 0.5px solid rgb(169, 169, 169);
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+}
+.fav-close-btn {
+    width: 20px;
+}
+
+
+
+.fav-item-holder {
+    list-style: none;
+}
+
+.fav-item {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+
+    padding: 15px 0px;
+    border-bottom: 0.5px solid rgb(169, 169, 169);
+    box-sizing: border-box;
+}
+.fav-img-holder {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fav-item-img {
+    max-width: 120px;
+}
+
+.fav-item-body {
+    width: 60%;
+    height: 100%;
+
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    
+    text-align: center;
+    padding-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fav-item-pre-order {
+    margin-top: 10px;
+    color: #CF0000;
+}
+
+.purchase-sign-holder {
+    width: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.purchase-sign-arrow {
+    width: 7px;
+}
+
+/* end of favourite */
+
+
+
+
+
+

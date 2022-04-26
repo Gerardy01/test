@@ -23,6 +23,24 @@
 
     transition: linear opacity 0.1s, linear height 0.01s 0.2s;
 }
+.full-overlay-visible {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 101;
+    
+    transition: opacity 0.3s 0.21s, height 0.01s;
+}
+.full-overlay {
+    width: 100vw;
+    height: 0vh;
+    background-color: black;
+    opacity: 0;
+    z-index: 101;
+
+    transition: opacity 0.3s, height 0.01s 0.3s;
+}
 
 
 /* Top Header */
