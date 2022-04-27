@@ -17,7 +17,7 @@
 }
 .navbar-closed {
     width: 100vw;
-    height: 0px;
+    height: 0vh;
     
     font-size: clamp(1.3rem, 3vw, 2rem);
     padding-bottom: 20px;
@@ -99,6 +99,143 @@
 }
 
 /* end of navbar */
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive breakpoint */
+
+
+
+
+
+/* Tablet */
+
+@media screen and (min-width:600px) {
+
+    .nav-menu-item-holder-open {
+        height: 180px;
+    }
+
+}
+
+@media screen and (min-width:740px) {
+
+
+
+}
+
+/* end of Tablet */
+
+
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1000px){
+
+    .navbar-open, .navbar-closed {
+        width: 100vw;
+        height: fit-content;
+        
+        font-size: 1.1rem;
+        padding:10px 0px 5px;
+
+        display: flex;
+        justify-content: center;
+
+        overflow: visible;
+    
+        background-color: white;
+        box-sizing: border-box;
+        transform: translate(0px, 0px);
+
+        border-bottom: 0.5px solid rgb(169, 169, 169);
+    }
+
+    .nav-menu-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .nav-menu {
+        width: fit-content;
+        list-style: none;
+    
+        padding: 5px 0px;
+        margin: 0px 30px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        border-bottom: none;
+    }
+    .nav-menu:hover {
+        transform: scale(1.2);
+        transition: 0.1s;
+    }
+    .nav-menu-header {
+        justify-content: center;
+    }
+    .nav-menu-title {
+        text-align: center;
+    }
+    .nav-menu-header-arrow-normal, .nav-menu-header-arrow-rotate {
+        display: none;
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .nav-menu-item-holder-open, .nav-menu-item-holder-closed {
+        width: 100px;
+        padding: 0px;
+        display: none;
+    }
+
+    .nav-menu:hover .nav-menu-item-holder-closed, .nav-menu:hover .nav-menu-item-holder-open{
+        height: fit-content;
+        display: block;
+        
+        list-style: none;
+    
+        padding: -1px 5px;
+        margin: 0px 0px 0px -10px;
+        position: absolute;
+        top: 30px;
+
+        background-color: white;
+
+        border: 1px solid rgb(178, 178, 178);
+        border-radius: 3px;
+    }
+
+    .nav-menu-item {
+        text-align: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(178, 178, 178);
+
+        box-sizing: border-box;
+    }
+    .nav-menu-item:hover {
+        background-color: rgb(241, 241, 241);
+    }
+
+}
+
+/* end of Desktop */
 
 
 

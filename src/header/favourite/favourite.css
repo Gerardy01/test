@@ -70,7 +70,7 @@
 
 .fav-item {
     width: 100%;
-    height: 150px;
+    height: 160px;
 
     display: flex;
 
@@ -87,7 +87,7 @@
     align-items: center;
 }
 .fav-item-img {
-    max-width: 120px;
+    max-width: 100%;
 }
 
 .fav-item-body {
@@ -95,7 +95,7 @@
     height: 100%;
 
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
     text-align: center;
     padding-top: 20px;
@@ -107,8 +107,12 @@
 
 }
 
-.fav-item-pre-order {
-    margin-top: 10px;
+.fav-item-title {
+    max-width: 35vw;
+}
+
+.fav-item-status {
+    margin-top: 5px;
     color: #CF0000;
 }
 
@@ -124,6 +128,91 @@
 }
 
 /* end of favourite */
+
+
+
+
+
+
+
+
+
+
+/* responsive breakpoint */
+
+
+
+/* Tablet */
+
+@media screen and (min-width:600px) {
+
+    .fav-overlay {
+        width: 40%;
+    }
+
+    .fav-main {
+        width: 60%;
+    }
+
+
+
+    .fav-item-img {
+        max-width: 90%;
+    }
+
+    .fav-item-title {
+        max-width: 22vw;
+    }
+
+}
+
+@media screen and (min-width:740px) {
+
+    .fav-overlay {
+        width: 50%;
+    }
+
+    .fav-main {
+        width: 50%;
+    }
+
+}
+
+/* end of Tablet */
+
+
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1000px){
+    
+    .fav-overlay {
+        width: 70%;
+    }
+
+    .fav-main {
+        width: 30%;
+    }
+
+
+
+    .fav-item-img {
+        max-width: 80%;
+    }
+
+    .fav-item-title {
+        width: 15vw;
+    }
+
+    .fav-close-btn {
+        margin-right: 10px;
+    }
+
+}
+
+/* end of Desktop */
 
 
 

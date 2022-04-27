@@ -201,3 +201,86 @@
 
 
 
+/* responsive breakpoint */
+
+
+
+/* Tablet */
+
+@media screen and (min-width:600px) {
+
+    .fav-icon {
+        margin-left: 3vw;
+    }
+
+    /* search */
+
+    .search-wrap {
+        width: 85%;
+    }
+
+}
+
+@media screen and (min-width:740px) {
+
+    /* search */
+
+    .search-wrap {
+        width: 90%;
+    }
+
+}
+
+/* end of Tablet */
+
+
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1000px){
+
+    .top-header {
+        background-color: white;
+    }
+
+    .fav-icon {
+        margin-left: 2vw;
+    }
+    
+    /* search */
+
+    .search-wrap {
+        width: 92%;
+    }
+
+    .search-bar-open {
+        transform: translate(0px, 110px);
+    }
+
+
+
+    .header-main {
+        border-bottom: none;
+    }
+
+    .ham-btn {
+        display: none;
+    }
+
+    .fav-icon {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
+
+}
+
+/* end of Desktop */
+
+
+
+
+
+
+

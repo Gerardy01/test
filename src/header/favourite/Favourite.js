@@ -25,7 +25,7 @@ function Favourite(props) {
                             <div className='fav-item-body'>
                                 <div className='fav-item-info'>
                                     <p className='fav-item-title'>Louis Vuitton a</p>
-                                    <p className='fav-item-pre-order'>PRE-ORDER</p>
+                                    <p className='fav-item-status'>PRE-ORDER</p>
                                 </div>
                                 <div className='purchase-sign-holder'>
                                     <span>Purchase</span>
