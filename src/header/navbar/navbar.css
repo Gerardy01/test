@@ -182,10 +182,6 @@
     
         border-bottom: none;
     }
-    .nav-menu:hover {
-        transform: scale(1.2);
-        transition: 0.1s;
-    }
     .nav-menu-header {
         justify-content: center;
     }
